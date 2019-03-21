@@ -4,11 +4,18 @@ import winsound
 
 wn = turtle.Screen()
 wn.title("Ping - Pong")
-wn.bgcolor("black")
+wn.bgcolor("green")
 wn.setup(width=800, height=600)
 wn.tracer(0)
 
-
+#CenterLine
+center = turtle.Turtle()
+center.speed(0)
+center.shape("square")
+center.shapesize(stretch_wid=100,stretch_len=0.1)
+center.color("white")
+center.penup()
+center.goto(0,0)
 
 # Paddle A
 paddle_a = turtle.Turtle()
